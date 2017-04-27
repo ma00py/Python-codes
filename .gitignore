@@ -1,0 +1,25 @@
+go = True
+def loops():
+    num1 =(input("Please choose a number to divide: "))
+    try:
+        num = int(num1)
+        po = 5
+        if (num >= 10000000):
+            po = 4
+            print ("That value is too large")
+    except ValueError:
+        po = 4
+        print("The value entered is not an integer")
+
+
+    if (po == 5):
+        listRange = list(range(1,num+1))
+        divisorList = []
+        for number in listRange:
+            if num % number == 0:
+                
+                print (number)
+    
+
+while go:
+    loops()
